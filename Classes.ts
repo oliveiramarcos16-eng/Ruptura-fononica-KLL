@@ -1,31 +1,40 @@
-export class Personagem{
-    nome: string;
-    vida: number;
+export class Lilly {
+    nome: String;
+    vidaLilly: Number;
+    curaLilly: Number;
 
-    constructor(nome: string, vida: number){
-        this.nome = nome
-        this.vida = vida
+    constructor(nome: String, vidaLilly: number, curaLilly: number){
+        this.nome=nome
+        this.vidaLilly=vidaLilly
+        this.curaLilly=curaLillyvidaInimigo
+    }
+
+}
+
+export class Kielop {
+    nome: String;
+    vidaKielop: Number;
+    curaKielop: Number;
+
+ constructor(nome: String, vidaKielop: number, curaKielop: number){
+        this.nome=nome
+        this.vidaKielop=vidaKielop
+        this.curaKielop=curaKielop
     }
 }
 
-export class Lilly extends Personagem{
+export class Inimigo {
+
+    nome: String;
+    vidaInimigo: number;
+    curaInimigo: Number;
+
+    constructor(nome: String, vidaInimigo: number, curaInimigo: number){
+        this.nome=nome
+        this.vidaInimigo=vidaInimigo
+        this.curaInimigo=curaInimigo
+    }
     
-    
-    atacar(){
-        console.log("Lilly atacou!");
-}
 }
 
-export class Kielop extends Personagem{
-    
-    atacar(){
-        console.log("Kielop atacou!");
-}
-}
 
-export class Inimigo extends Personagem{
-
-        atacar(){
-            console.log("Inimigo atacou!")
-        }
-}
